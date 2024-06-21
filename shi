@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Images Based on Intelligence Assessment</title>
+</head>
+<body>
+    <h1>Intelligence Assessment</h1>
+
+    <div id="assessmentResult">
+        <!-- Hier wird das Ergebnis der Bewertung angezeigt -->
+    </div>
+
+    <img id="resultImage" src="" alt="Assessment Image">
+
+    <script>
+        function assessIntelligence(name, birthdate) {
+            // Deine Funktion zur Intelligenzbewertung hier einfügen
+            // Zum Beispiel wie zuvor erwähnt mit "dumb" und "not dumb" Assessments
+        }
+
+        // Beispielaufruf der Funktion
+        let username = "Max Mustermann";
+        let birthdate = "1990-05-15"; // Beispiel Geburtsdatum im ISO-Format (YYYY-MM-DD)
+        let result = assessIntelligence(username, birthdate);
+
+        // Ergebnis und Bild anzeigen
+        document.getElementById('assessmentResult').textContent = result.assessment;
+        document.getElementById('resultImage').src = result.image;
+    </script>
+</body>
+</html>
+
